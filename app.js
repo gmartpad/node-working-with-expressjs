@@ -9,7 +9,7 @@ const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use(routes.admin)
+app.use("/admin", routes.admin)
 
 app.use(routes.shop);
 
